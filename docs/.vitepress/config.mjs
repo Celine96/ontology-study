@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid({
   lang: 'ko-KR',
   title: "온톨로지 학습 교안",
   description: '크롤링+온톨로지로 지식그래프를 만드는 실습 중심 교안 (수연님 맞춤)',

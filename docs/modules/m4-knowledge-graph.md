@@ -30,6 +30,55 @@ SNS에서 "내 친구의 친구" 같은 관계도를 본 적 있죠? 사람은 *
 - 리포트의 Mermaid 그림 : 그 사진을 **사람 눈에 보기 좋게** 그린 것
 - 변경 추적 부분 : 어제와 비교해 뭐가 바뀌었는지
 
+### 실제 리포트의 지식그래프 (2026-05-23, 통째로)
+
+아래가 [실제 리포트](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/reports/2026/05/2026-05-23.md)의 **"전체 지식그래프"** 그림이에요. M0에서 본 3개 트리플이, 이렇게 수십 개 모이면 **하나의 지도**가 돼요.
+
+```mermaid
+graph LR
+    org006(["🏛 국립중앙과학관"])
+    org004(["🏛 유성구통합도서관"])
+    evt027(["⚡ 브릭파티<br/>D-day 개막"])
+    evt042(["⚡ 블록코딩<br/>D-day 시작"])
+    evt041(["⚡ 피직스랩 상시"])
+    evt044(["⚡ 부모특강<br/>D-day 10:00"])
+    evt034(["⚡ 한밭수목원 봄꽃<br/>D-2 종료임박"])
+    evt028(["⚡ 공룡덕후 D-7"])
+    evt043(["⚡ 건축특강 D-7"])
+    evt033(["⚡ 유성봄꽃전시회"])
+    evt039(["⚡ 트윙클 ~6/21"])
+    act026(["⚡ 브릭작가 해설<br/>12명 작가"])
+    venue005(["📍 국립중앙과학관"])
+    venue026(["📍 피직스랩"])
+    venue016(["📍 아가랑도서관"])
+    venue024(["📍 한밭수목원"])
+    dong_doryong(["📍 도룡동"])
+    dong_jeonmin(["📍 전민동"])
+
+    org006 -->|operates| venue005
+    org006 -->|operates| venue026
+    evt027 -->|hostsAt| venue005
+    evt042 -->|hostsAt| venue005
+    evt041 -->|hostsAt| venue026
+    evt044 -->|hostsAt| venue016
+    evt028 -->|hostsAt| venue005
+    evt043 -->|hostsAt| venue005
+    evt034 -->|hostsAt| venue024
+    act026 -->|featuresActivity| evt027
+    venue005 -->|locatedIn| dong_doryong
+    venue026 -->|locatedIn| dong_doryong
+    venue016 -->|locatedIn| dong_jeonmin
+    evt042 -->|partOfSeries| evt027
+    evt043 -->|partOfSeries| evt027
+    evt044 -->|organizedBy| org004
+    evt027 -.->|visitCombo| evt041
+    evt042 -.->|visitCombo| evt041
+    evt043 -.->|visitCombo| evt028
+    evt044 -.->|crossDongCombo<br/>오전→오후| evt027
+```
+
+> **점선 화살표**(`-.->`)는 **추론으로 만들어진 관계**예요 (M3 참고). 예: `부모특강 -.crossDongCombo.→ 브릭파티` = "오전 전민동 → 오후 도룡동 동선"이라고 컴퓨터가 추천한 것. 실선은 명시적 사실, 점선은 추론된 사실!
+
 ## 온토에어 연결점
 
 **온토에어** = 온톨로지를 **시각화(눈에 보이게)** 해주는 도구예요. 즉 위에서 본 "Mermaid 그림"을 훨씬 멋지고 움직이게 만든 것이라고 보면 돼요.
