@@ -27,7 +27,7 @@
 
 ## onto-osint 대응
 
-`CLAUDE.md` 파일과 리포트의 "추론 결과"에 이런 규칙들이 들어 있어요. (`↑`는 "점수가 올라간다"는 뜻)
+[`CLAUDE.md`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/CLAUDE.md) 파일과 리포트의 "추론 결과"에 이런 규칙들이 들어 있어요. (`↑`는 "점수가 올라간다"는 뜻)
 
 - **`same_dong_combo`** — 같은 동·같은 날 행사를 같이 가기 좋게 묶기 · 신뢰도 **0.92**
 - **`same_date_cross_dong`** — 같은 날 다른 동 행사를 이어서 추천 · 신뢰도 **0.80**

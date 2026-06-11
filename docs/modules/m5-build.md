@@ -15,8 +15,8 @@ onto-osint도 똑같아요. 이미 "유성구 어린이 행사" 레시피가 완
 ## 순서
 
 1. 레포 fork/clone → `onto-osint-seocho-aifesta` (복사해 오기)
-2. `config/osint-config.json` 수정 — 지역(서초구), 출처(서초구청·페스타 공식·AI행사 매체), 클래스 시드(M1 결과), 타겟존(전시존/피지컬AI존…)
-3. `CLAUDE.md` 수정 — 추론 규칙(M3 결과) + 판단 기준 적기
+2. [`config/osint-config.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/config/osint-config.json) 수정 — 지역(서초구), 출처(서초구청·페스타 공식·AI행사 매체), 클래스 시드(M1 결과), 타겟존(전시존/피지컬AI존…)
+3. [`CLAUDE.md`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/CLAUDE.md) 수정 — 추론 규칙(M3 결과) + 판단 기준 적기
 4. 하루치 파이프라인 실행 → 첫 리포트 1장 생성
 5. 결과를 보고 규칙·클래스를 다듬기 (반복) → 며칠 돌려서 안정화
 

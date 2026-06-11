@@ -30,8 +30,8 @@
 
 실습실 레포에선 클래스(틀)와 인스턴스(진짜 데이터)를 파일로 나눠서 저장해요.
 
-- `ontology/schema.json` = **클래스/속성 정의** (틀) — "어떤 종류들이 있는지"
-- `ontology/instances.json` = **실제 장소·기관 누적 DB** (붕어빵들) — "진짜 있는 것들"
+- [`ontology/schema.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/ontology/schema.json) = **클래스/속성 정의** (틀) — "어떤 종류들이 있는지"
+- [`ontology/instances.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/ontology/instances.json) = **실제 장소·기관 누적 DB** (붕어빵들) — "진짜 있는 것들"
 - 핵심 클래스 위계: `Event → Venue → Dong`, 그리고 `Organization, Activity, AgeGroup`
 
 > `schema(스키마)`는 "설계도·틀", `instance(인스턴스)`는 "그 틀로 만든 진짜 하나"라고 기억하면 돼요.

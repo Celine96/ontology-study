@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 부록 & 진도표
       link: /appendix
+    - theme: alt
+      text: 🔗 실습실 레포 (GitHub)
+      link: https://github.com/tykimos/onto-osint-yuseong-event
 
 features:
   - icon: "🧩"
@@ -53,7 +56,7 @@ features:
 - **[실습]** → 내 도메인(서초 AI 페스타 / 부동산)으로 손으로 옮겨보기
 - **[완료 체크]** → 다음으로 넘어가도 되는지 확인
 
-> **실습실(lab):** `tykimos/onto-osint-yuseong-event` — 크롤링+온톨로지로 지역 이벤트 일일 큐레이션 리포트를 만드는 레포
+> **실습실(lab):** [`tykimos/onto-osint-yuseong-event`](https://github.com/tykimos/onto-osint-yuseong-event) — 크롤링+온톨로지로 지역 이벤트 일일 큐레이션 리포트를 만드는 레포
 > **이번 프로젝트 범위:** 서초 AI 페스타(10/17)에 온톨로지 적용 — 일일 큐레이션 파이프라인 완성까지 (부동산·온토에어는 다음 범위)
 > **권장 페이스:** 1주 1모듈. 9월 전 M5 완성.
 

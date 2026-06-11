@@ -17,7 +17,7 @@ SNS에서 "내 친구의 친구" 같은 관계도를 본 적 있죠? 사람은 *
 
 - **지식그래프(KG) = 온톨로지(틀) + 인스턴스(진짜 데이터)** 를 합쳐 실제로 굴러가게 한 것.
 - **스키마 자동 진화**: 처음 보는 기업·기술이 들어와도 틀이 막히지 않고 **스스로 칸을 늘려가요**(open-world). onto-osint가 매일 이걸 해요.
-- **스냅샷(snapshot)**: 하루치 지도를 `ontology/kg/YYYY-MM-DD.json` 파일로 **찰칵 저장**해 둬요. 그래서 어제와 오늘을 비교할 수 있어요 (예: `evt-027`이 `D-1`에서 `D-day`로 바뀜).
+- **스냅샷(snapshot)**: 하루치 지도를 [`ontology/kg/`](https://github.com/tykimos/onto-osint-yuseong-event/tree/master/ontology/kg) 폴더에 `YYYY-MM-DD.json` 파일로 **찰칵 저장**해 둬요. 그래서 어제와 오늘을 비교할 수 있어요 (예: `evt-027`이 `D-1`에서 `D-day`로 바뀜).
 
 ::: tip 💡 용어 한 줄 정리
 - **open-world(오픈 월드)** = "세상엔 아직 모르는 게 많다"고 보고, 새로운 게 나타나면 받아들이는 열린 태도. (반대: 정해진 것 외엔 없다고 보는 닫힌 방식)
@@ -26,7 +26,7 @@ SNS에서 "내 친구의 친구" 같은 관계도를 본 적 있죠? 사람은 *
 
 ## onto-osint 대응
 
-- `ontology/kg/2026-05-23.json` : 그날의 지식그래프 사진(스냅샷)
+- [`ontology/kg/2026-05-23.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/ontology/kg/2026-05-23.json) : 그날의 지식그래프 사진(스냅샷)
 - 리포트의 Mermaid 그림 : 그 사진을 **사람 눈에 보기 좋게** 그린 것
 - 변경 추적 부분 : 어제와 비교해 뭐가 바뀌었는지
 
@@ -87,7 +87,7 @@ graph LR
 
 ## 실습 ✏️
 
-`kg/2026-05-23.json` 파일 하나를 열어서 **점 5개 + 선 5개**만 골라 Mermaid로 직접 그려봐요. (아래처럼 `graph TD`로 시작하면 위에서 아래로 그려져요.)
+[`ontology/kg/2026-05-23.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/ontology/kg/2026-05-23.json) 파일 하나를 열어서 **점 5개 + 선 5개**만 골라 Mermaid로 직접 그려봐요. (아래처럼 `graph TD`로 시작하면 위에서 아래로 그려져요.)
 
 ```mermaid
 graph TD
