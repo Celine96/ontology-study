@@ -27,7 +27,7 @@ SNS에서 "내 친구의 친구" 같은 관계도를 본 적 있죠? 사람은 *
 ## onto-osint 대응
 
 - [`ontology/kg/2026-05-23.json`](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/ontology/kg/2026-05-23.json) : 그날의 지식그래프 사진(스냅샷)
-- 리포트의 Mermaid 그림 : 그 사진을 **사람 눈에 보기 좋게** 그린 것
+- [리포트의 Mermaid 그림](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/reports/2026/05/2026-05-23.md) : 그 사진을 **사람 눈에 보기 좋게** 그린 것
 - 변경 추적 부분 : 어제와 비교해 뭐가 바뀌었는지
 
 ### 실제 리포트의 지식그래프 (2026-05-23, 통째로)

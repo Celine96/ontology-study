@@ -26,7 +26,7 @@ M0~M5(실용)로 감각을 먼저 만들고 → 필요할 때 RDF/OWL로 "형식
 
 - "What is an Ontology" — 트리플/클래스/추론 개념 검색
 - 지식그래프(Knowledge Graph) 입문 자료
-- `onto-osint` 본가 레포 README (본가 메커니즘 이해)
+- [`onto-osint` 본가 레포](https://github.com/tykimos/onto-osint) README (본가 메커니즘 이해)
 
 ---
 

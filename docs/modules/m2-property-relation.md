@@ -33,7 +33,7 @@
 
 ## onto-osint 대응 (그림 속 화살표 이름들)
 
-리포트 그림(Mermaid)의 화살표에 붙은 영어가 바로 관계예요.
+[리포트 그림(Mermaid)](https://github.com/tykimos/onto-osint-yuseong-event/blob/master/reports/2026/05/2026-05-23.md)의 화살표에 붙은 영어가 바로 관계예요.
 
 - `operates` (기관 → 이벤트): 누가 운영하나
 - `hostsAt` (이벤트 → 장소): 어디서 열리나
