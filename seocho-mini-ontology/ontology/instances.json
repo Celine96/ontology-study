@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "description": "서초 AI 페스타의 진짜 인스턴스(붕어빵)들. 각 항목의 type은 schema.json의 클래스 id. 수연님이 사실을 추가하며 채워가세요.",
+  "last_updated": "2026-06-15",
+
+  "entities": [
+    {
+      "id": "fest-2026",
+      "type": "Event",
+      "name": "2026 서초 AI 페스타",
+      "properties": { "event_type": "축제", "date": "2026-10-17" },
+      "note": "최상위 행사 — 모든 부스·강연이 이 안에서 열림"
+    },
+    {
+      "id": "venue-park",
+      "type": "Venue",
+      "name": "서초문화예술공원",
+      "properties": { "zone_type": "야외공원", "indoor_outdoor": "outdoor" }
+    },
+    {
+      "id": "venue-physical-ai-zone",
+      "type": "Venue",
+      "name": "피지컬 AI(로봇)존",
+      "properties": { "zone_type": "특별존" }
+    },
+    {
+      "id": "org-seocho-gu",
+      "type": "Organization",
+      "name": "서초구청",
+      "properties": { "org_type": "공공기관", "role": "주최" }
+    },
+    {
+      "id": "org-committee",
+      "type": "Organization",
+      "name": "공동기획단",
+      "properties": { "org_type": "자문기구", "role": "프로그램 제안·홍보·트렌드 반영", "member_count": 17 }
+    },
+
+    {
+      "id": "booth-TODO",
+      "type": "Event",
+      "name": "(👉 수연님 차례: 실제 부스나 강연 하나를 여기 채워보세요)",
+      "properties": { "event_type": "체험부스", "topic": "?", "target_age": "?" },
+      "note": "예: 로봇 체험부스, 생성형AI 그림 부스, AI 진로 강연 등. 채운 뒤 kg.json에 이 부스를 잇는 트리플도 추가!"
+    }
+  ]
+}

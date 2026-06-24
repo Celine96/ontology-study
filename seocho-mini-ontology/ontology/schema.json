@@ -1,0 +1,56 @@
+{
+  "version": "0.1.0",
+  "description": "서초 AI 페스타 미니 온톨로지 스키마(틀) — 학습용. onto-osint의 ontology/schema.json을 단순화한 버전. 여기에는 '종류(클래스)'와 '관계'만 적는다. 실제 데이터는 instances.json에.",
+  "last_updated": "2026-06-15",
+
+  "classes": [
+    {
+      "id": "Entity",
+      "label": "엔티티",
+      "description": "최상위 클래스 (모든 것의 부모)",
+      "subclasses": [
+        {
+          "id": "Event",
+          "label": "행사",
+          "description": "페스타에서 열리는 강연·체험부스·공모전 등",
+          "properties": ["name", "event_type", "date", "time", "topic", "target_age", "source_url"]
+        },
+        {
+          "id": "Venue",
+          "label": "공간",
+          "description": "행사가 열리는 장소·존",
+          "properties": ["name", "zone_type", "indoor_outdoor", "accessible"]
+        },
+        {
+          "id": "Organization",
+          "label": "주체",
+          "description": "행사를 운영·주최·자문하는 곳",
+          "properties": ["name", "org_type", "role"]
+        },
+        {
+          "id": "AITopic",
+          "label": "기술분야",
+          "description": "행사가 다루는 AI 주제 (생성형AI·로봇·음성·비전 등)",
+          "properties": ["name"]
+        },
+        {
+          "id": "AgeGroup",
+          "label": "대상세대",
+          "description": "행사가 겨냥하는 세대·계층 (아동·여성·장애인·어르신·가족 등)",
+          "properties": ["name"]
+        }
+      ]
+    }
+  ],
+
+  "relations": [
+    { "id": "operates",  "label": "운영한다",        "domain": "Organization", "range": "Event" },
+    { "id": "hostsAt",   "label": "~에서 열린다",     "domain": "Event",        "range": "Venue" },
+    { "id": "locatedIn", "label": "~안에 위치한다",   "domain": "Venue",        "range": "Venue" },
+    { "id": "demos",     "label": "~을 다룬다",       "domain": "Event",        "range": "AITopic" },
+    { "id": "targets",   "label": "~을 대상으로한다", "domain": "Event",        "range": "AgeGroup" },
+    { "id": "advises",   "label": "~을 자문한다",     "domain": "Organization", "range": "Event" }
+  ],
+
+  "_수연님_TODO": "필요한 클래스나 관계가 떠오르면 여기 추가해보세요. (예: 클래스 Award(수상작), Sponsor(후원사) / 관계 sponsors(후원한다), partOfSeries(시리즈의 일부다))"
+}

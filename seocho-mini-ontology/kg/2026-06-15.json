@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "snapshot_date": "2026-06-15",
+  "description": "서초 AI 페스타 미니 지식그래프. schema(클래스)와 instances(진짜)를 트리플로 이은 것. subject/object는 instances.json의 id, predicate는 schema.json relations의 id.",
+
+  "triples": [
+    { "subject": "org-seocho-gu",          "predicate": "operates",  "object": "fest-2026" },
+    { "subject": "fest-2026",              "predicate": "hostsAt",   "object": "venue-park" },
+    { "subject": "venue-physical-ai-zone", "predicate": "locatedIn", "object": "venue-park" },
+    { "subject": "org-committee",          "predicate": "advises",   "object": "fest-2026" }
+  ],
+
+  "_수연님_TODO": "instances.json에 부스(booth-TODO)를 채웠다면, 그 부스를 잇는 트리플을 여기 추가하세요. 예: { subject: 'org-어떤기업', predicate: 'operates', object: 'booth-내가만든id' }, { subject: 'booth-내가만든id', predicate: 'hostsAt', object: 'venue-physical-ai-zone' }"
+}
