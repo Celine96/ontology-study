@@ -62,7 +62,18 @@
     { "id": "locatedIn", "label": "~안에 위치한다",   "domain": "Venue",        "range": "Venue" },
     { "id": "demos",     "label": "~을 다룬다",       "domain": "Event",        "range": "AITopic" },
     { "id": "targets",   "label": "~을 대상으로한다", "domain": "Event",        "range": "TargetGroup" },
-    { "id": "advises",   "label": "~을 자문한다",     "domain": "Organization", "range": "Event" }
+    { "id": "advises",   "label": "~을 자문한다",     "domain": "Organization", "range": "Event" },
+    { "id": "visitCombo", "label": "함께 둘러보기",   "domain": "Event",        "range": "Event", "inferred": true, "note": "사람이 직접 안 적고 '추론'으로 생기는 관계. 그래프에선 점선으로 표시." }
+  ],
+
+  "rules": [
+    {
+      "id": "same_venue_combo",
+      "label": "같은 장소 함께보기",
+      "if": "두 행사(Event, 부스/프로그램)가 같은 Venue에서 열린다(hostsAt) — 단, 페스타 자체는 제외",
+      "then": "그 둘을 visitCombo 로 잇는다",
+      "confidence": 0.9
+    }
   ],
 
   "_수연님_TODO": "필요한 클래스나 관계가 떠오르면 여기 추가해보세요. (예: 클래스 Award(수상작), Sponsor(후원사) / 관계 sponsors(후원한다), partOfSeries(시리즈의 일부다))"

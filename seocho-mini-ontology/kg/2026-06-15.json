@@ -15,7 +15,24 @@
     { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-kids" },
     { "subject": "booth-ai-nomad", "predicate": "targets", "object": "audience-parent" },
     { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-30s" },
-    { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-40s" }
+    { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-40s" },
+
+    { "subject": "booth-genai", "predicate": "hostsAt", "object": "venue-park" },
+    { "subject": "booth-genai", "predicate": "demos",   "object": "topic-genai" },
+    { "subject": "booth-genai", "predicate": "targets", "object": "age-kids" },
+    { "subject": "booth-genai", "predicate": "targets", "object": "audience-parent" }
+  ],
+
+  "inferred_triples": [
+    {
+      "subject": "booth-ai-nomad",
+      "predicate": "visitCombo",
+      "object": "booth-genai",
+      "inferred": true,
+      "confidence": 0.9,
+      "rule": "same_venue_combo",
+      "reason": "둘 다 서초문화예술공원(venue-park)에서 열림 → '함께 둘러보기' 추천"
+    }
   ],
 
   "_수연님_TODO": "instances.json에 부스(booth-TODO)를 채웠다면, 그 부스를 잇는 트리플을 여기 추가하세요. 예: { subject: 'org-어떤기업', predicate: 'operates', object: 'booth-내가만든id' }, { subject: 'booth-내가만든id', predicate: 'hostsAt', object: 'venue-physical-ai-zone' }"

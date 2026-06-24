@@ -46,6 +46,15 @@
 
     { "id": "topic-daily-ai",  "type": "AITopic",  "name": "일상에서 활용 가능한 AI" },
 
+    {
+      "id": "booth-genai",
+      "type": "Event",
+      "name": "생성형 AI 그림놀이",
+      "properties": { "event_type": "체험부스" },
+      "note": "추론(함께보기) 시연용 2번째 부스 — 바꾸고 싶으면 말해주세요"
+    },
+    { "id": "topic-genai", "type": "AITopic", "name": "생성형 AI" },
+
     { "id": "audience-solopreneur", "type": "Audience", "name": "솔로프리너 (Solopreneur)" },
     { "id": "audience-parent",      "type": "Audience", "name": "부모" },
 

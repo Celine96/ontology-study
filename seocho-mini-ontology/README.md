@@ -32,9 +32,28 @@ graph LR
   nomad -->|targets 대상| parent["👪 부모"]
   nomad -->|targets 대상| age30["🧑 30대"]
   nomad -->|targets 대상| age40["🧑 40대"]
+  genai["⚡ 생성형 AI 그림놀이"] -->|hostsAt 열린다| park
+  genai -->|demos 다룬다| topic2["🧠 생성형 AI"]
+  nomad -.->|"visitCombo (추론) 0.9"| genai
 ```
 
+> **실선** = 사람이 적은 사실 / **점선(`-.->`)** = 규칙이 추론한 관계. 마지막 `nomad ⋯ genai`가 추론으로 생긴 "함께 둘러보기" 추천이에요.
+
 이 그림의 화살표 4개가 곧 `kg/2026-06-15.json`의 트리플 4개예요. **트리플 = 그래프의 화살표 하나**라는 걸 눈으로 확인!
+
+---
+
+## 추론 규칙 (M3)
+
+`schema.json`의 `rules`에 이런 규칙을 넣어뒀어요:
+
+```
+same_venue_combo  [신뢰도 0.9]
+  IF   두 행사가 같은 Venue에서 열린다 (페스타 자체 제외)
+  THEN 그 둘을 visitCombo(함께 둘러보기)로 잇는다
+```
+
+→ 노마드존·생성형AI그림놀이가 둘 다 서초문화예술공원에서 열리니, 규칙이 **자동으로** 둘을 이었어요. 그 결과가 `kg.json`의 `inferred_triples`(점선)예요. **이게 큐레이션 리포트의 "이 부스들 같이 보세요" 추천의 원리**예요.
 
 ---
 
