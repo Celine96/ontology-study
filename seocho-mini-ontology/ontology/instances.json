@@ -37,11 +37,16 @@
     },
 
     {
-      "id": "booth-TODO",
+      "id": "booth-ai-nomad",
       "type": "Event",
-      "name": "(👉 수연님 차례: 실제 부스나 강연 하나를 여기 채워보세요)",
-      "properties": { "event_type": "체험부스", "topic": "?", "target_age": "?" },
-      "note": "예: 로봇 체험부스, 생성형AI 그림 부스, AI 진로 강연 등. 채운 뒤 kg.json에 이 부스를 잇는 트리플도 추가!"
-    }
+      "name": "AI 노마드 존",
+      "properties": { "event_type": "테마존/프로그램" },
+      "note": "🎉 수연님이 추가한 첫 인스턴스! 주제·대상은 관계(demos/targets)로 kg.json에서 연결됨."
+    },
+
+    { "id": "topic-daily-ai",  "type": "AITopic",  "name": "일상에서 활용 가능한 AI" },
+
+    { "id": "age-solopreneur", "type": "AgeGroup", "name": "솔로프리너" },
+    { "id": "age-kids",        "type": "AgeGroup", "name": "아동" }
   ]
 }

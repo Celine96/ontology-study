@@ -25,6 +25,10 @@ graph LR
   fest -->|hostsAt 열린다| park["📍 서초문화예술공원"]
   zone["📍 피지컬AI존"] -->|locatedIn 위치| park
   com["🏛 공동기획단"] -->|advises 자문| fest
+  nomad["⚡ AI 노마드 존"] -->|hostsAt 열린다| park
+  nomad -->|demos 다룬다| topic["🧠 일상 속 AI"]
+  nomad -->|targets 대상| solo["👤 솔로프리너"]
+  nomad -->|targets 대상| kids["🧒 아동"]
 ```
 
 이 그림의 화살표 4개가 곧 `kg/2026-06-15.json`의 트리플 4개예요. **트리플 = 그래프의 화살표 하나**라는 걸 눈으로 확인!
