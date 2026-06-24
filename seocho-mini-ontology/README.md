@@ -27,7 +27,7 @@ graph LR
   com["🏛 공동기획단"] -->|advises 자문| fest
   nomad["⚡ AI 노마드 존"] -->|hostsAt 열린다| park
   nomad -->|demos 다룬다| topic["🧠 일상 속 AI"]
-  nomad -->|targets 대상| solo["👤 솔로프리너"]
+  nomad -->|targets 대상| solopreneur["👤 솔로프리너 Solopreneur"]
   nomad -->|targets 대상| kids["🧒 아동"]
 ```
 
