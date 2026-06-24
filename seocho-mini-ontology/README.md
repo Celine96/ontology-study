@@ -29,6 +29,9 @@ graph LR
   nomad -->|demos 다룬다| topic["🧠 일상 속 AI"]
   nomad -->|targets 대상| solopreneur["👤 솔로프리너 Solopreneur"]
   nomad -->|targets 대상| kids["🧒 아동"]
+  nomad -->|targets 대상| parent["👪 부모"]
+  nomad -->|targets 대상| age30["🧑 30대"]
+  nomad -->|targets 대상| age40["🧑 40대"]
 ```
 
 이 그림의 화살표 4개가 곧 `kg/2026-06-15.json`의 트리플 4개예요. **트리플 = 그래프의 화살표 하나**라는 걸 눈으로 확인!
