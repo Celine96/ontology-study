@@ -46,7 +46,7 @@
 
     { "id": "topic-daily-ai",  "type": "AITopic",  "name": "일상에서 활용 가능한 AI" },
 
-    { "id": "age-solopreneur", "type": "AgeGroup", "name": "솔로프리너" },
-    { "id": "age-kids",        "type": "AgeGroup", "name": "아동" }
+    { "id": "audience-solopreneur", "type": "Audience", "name": "솔로프리너 (Solopreneur)" },
+    { "id": "age-kids",             "type": "AgeGroup", "name": "아동" }
   ]
 }

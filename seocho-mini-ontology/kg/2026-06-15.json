@@ -11,7 +11,7 @@
 
     { "subject": "booth-ai-nomad", "predicate": "hostsAt", "object": "venue-park" },
     { "subject": "booth-ai-nomad", "predicate": "demos",   "object": "topic-daily-ai" },
-    { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-solopreneur" },
+    { "subject": "booth-ai-nomad", "predicate": "targets", "object": "audience-solopreneur" },
     { "subject": "booth-ai-nomad", "predicate": "targets", "object": "age-kids" }
   ],
 

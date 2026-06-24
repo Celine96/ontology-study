@@ -34,10 +34,23 @@
           "properties": ["name"]
         },
         {
-          "id": "AgeGroup",
-          "label": "대상세대",
-          "description": "행사가 겨냥하는 세대·계층 (아동·여성·장애인·어르신·가족 등)",
-          "properties": ["name"]
+          "id": "TargetGroup",
+          "label": "대상",
+          "description": "행사가 겨냥하는 대상. 아래로 세대(AgeGroup)와 계층(Audience)으로 나뉜다.",
+          "subclasses": [
+            {
+              "id": "AgeGroup",
+              "label": "대상세대",
+              "description": "나이 기준 대상 (아동·어르신·가족 등)",
+              "properties": ["name"]
+            },
+            {
+              "id": "Audience",
+              "label": "대상계층",
+              "description": "직업·라이프스타일 기준 대상 (솔로프리너·학생·직장인 등)",
+              "properties": ["name"]
+            }
+          ]
         }
       ]
     }
@@ -48,7 +61,7 @@
     { "id": "hostsAt",   "label": "~에서 열린다",     "domain": "Event",        "range": "Venue" },
     { "id": "locatedIn", "label": "~안에 위치한다",   "domain": "Venue",        "range": "Venue" },
     { "id": "demos",     "label": "~을 다룬다",       "domain": "Event",        "range": "AITopic" },
-    { "id": "targets",   "label": "~을 대상으로한다", "domain": "Event",        "range": "AgeGroup" },
+    { "id": "targets",   "label": "~을 대상으로한다", "domain": "Event",        "range": "TargetGroup" },
     { "id": "advises",   "label": "~을 자문한다",     "domain": "Organization", "range": "Event" }
   ],
 
